@@ -58,6 +58,7 @@ font-family:verdana;
 		
 		<h2 style="color:blue;">Login Page</h2>
 		<table align="center">
+		<a style="color: blue;font-size:20px;" href="/admin.jsp"><b>Admin Login</b></a>
 			<tr><th><h3 style="font-size: 25px;">CustomerEmail*</h3></th></tr>
 			<tr><th><input type="text" name=email  placeholder="Enter Customeremail"></th></tr>
 

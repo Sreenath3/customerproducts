@@ -8,13 +8,14 @@
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css">
+<script src="webjars/jquery/2.0.0/jquery.min.js"></script>
 <style>
 body {
-	background-color: skyblue;
-	 font-family:verdana;
+	font-family: verdana;
 }
 
-input[type=text] ,[type=password]{
+/* Full-width input fields */
+input[type=text], input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -22,6 +23,7 @@ input[type=text] ,[type=password]{
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 }
+
 button {
   background-color: #4CAF50;
   color: white;
@@ -29,22 +31,52 @@ button {
   margin: 15px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
 }
+h2
+{
+ text-align:center;
+}
+a
+{
+font-family:verdana;
+}
+
+
 </style>
+
 </head>
 <body>
-	<form action="customer/manager" method="Post">
-
-		<h1 align="center">Merchant Details</h1>
-		<table  align="center">
-			<tr><th><h3>Merchant UserName</h3></th></tr>
-			<tr><th><input type="text" name="name" required autofocus /></th></tr>
+	<div class="container">
+		<h2
+			style="text-align: center; background-color: skyblue; padding: 30px; width: 100%;">
+			<b>Return Product</b>
 			
-			<tr><th><h3>Merchant Password</h3></th></tr>
-			<tr><th><input type="password" name="password" value="password" ></th></tr>
-			<tr><th><button  class="btn btn-primary" type="submit">Login</button></th></tr>
-		</table>
+		</h2>
+	
+	<form action="customer/manager" method="post">
+		
+		<h2 style="color:blue;">Login Page</h2>
+		<table align="center">
+		<a style="color: blue;font-size:20px;" href="/admin.jsp"><b>Admin Login</b></a>
+			<tr><th><h3 style="font-size: 25px;">Id*</h3></th></tr>
+			<tr><th><input type="text" name=id  placeholder="id"></th></tr>
+
+			
+			
+
+			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
+			</table>
+
+		</div>
+
+
+
 	</form>
+	
+
+	
+	</div>
+
 </body>
 </html>
