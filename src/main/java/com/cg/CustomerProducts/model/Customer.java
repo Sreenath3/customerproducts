@@ -19,6 +19,14 @@ public class Customer {
 	private String customeraddress;
 	private String email;
 	private String pass;
+	private int orderid;
+	
+	public int getOrderid() {
+		return orderid;
+	}
+	public void setOrderid(int orderid) {
+		this.orderid = orderid;
+	}
 	private int balance;
 	public int getBalance() {
 		return balance;

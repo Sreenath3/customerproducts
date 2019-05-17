@@ -43,9 +43,9 @@ public class CustomerServiceImpl implements ICustomerService {
 	}
 
 	@Override
-	public Customer findByEmailAndPass(String email, String password) {
+	public Customer findByEmailAndPassAndOrderid(String email, String password,Integer orderid) {
 		try {
-			Customer customer = customerdao.findByEmailAndPass(email, password);
+			Customer customer = customerdao.findByEmailAndPassAndOrderid(email, password,orderid);
 			return customer;
 		} catch (Exception e) {
 			return null;
@@ -54,6 +54,12 @@ public class CustomerServiceImpl implements ICustomerService {
 	@Override
 	public Customer findByEmail(String email) {
 		Customer customer = customerdao.findByEmail(email);
+		return customer;
+	}
+
+	@Override
+	public Customer findByOrderid(Integer orderid) {
+		Customer customer = customerdao.findByOrderid(orderid);
 		return customer;
 	}
 

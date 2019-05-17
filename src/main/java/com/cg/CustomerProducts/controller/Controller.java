@@ -32,12 +32,13 @@ public class Controller {
 
 	@PostMapping("/saveee")
 	public ModelAndView save(@RequestParam String customername, @RequestParam String customeraddress,
-			@RequestParam String email, @RequestParam String pass) {
+			@RequestParam String email, @RequestParam String pass,@RequestParam Integer orderid) {
 		Customer customerlist = new Customer();
 		customerlist.setCustomername(customername);
 		customerlist.setCustomeraddress(customeraddress);
 		customerlist.setEmail(email);
 		customerlist.setPass(pass);
+		customerlist.setOrderid(orderid);
 		customerlist.setBalance(0);
 
 		service.save(customerlist);
@@ -116,11 +117,11 @@ public class Controller {
 	}
 
 	@PostMapping("checkuser")
-	public ModelAndView requestLogin(@RequestParam String email, @RequestParam String password) {
+	public ModelAndView requestLogin(@RequestParam String email, @RequestParam String password,Integer orderid) {
 		ModelAndView modelAndView;
 		temp = email;
 
-		Customer cust = service.findByEmailAndPass(email, password);
+		Customer cust = service.findByEmailAndPassAndOrderid(email, password,orderid);
 		if (cust == null) {
 			modelAndView = new ModelAndView("noidfound");
 			return modelAndView;

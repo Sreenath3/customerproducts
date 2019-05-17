@@ -58,6 +58,12 @@ button {
 					</h3>
 					<input type="text" name="pass"></th>
 			</tr>
+			<tr>
+				<th><h3>
+						<b>OrderId
+					</h3>
+					<input type="text" name="orderid"></th>
+			</tr>
 			<br>
 			<tr>
 				<th><button class="btn btn-primary" type="submit">Add

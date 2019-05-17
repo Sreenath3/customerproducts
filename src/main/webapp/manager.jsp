@@ -27,11 +27,12 @@ input[type=text], input[type=password] {
 button {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 10px;
+  padding: 20px 20px;
   margin: 15px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
+  
 }
 h2
 {
@@ -66,7 +67,7 @@ font-family:verdana;
 			
 
 			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
-			</table>
+			
 
 		</div>
 
@@ -74,9 +75,21 @@ font-family:verdana;
 
 	</form>
 	
+	
+	
+	<form action="../customer/saveee1" method="Post">
+	<<div class="container">
+		
+			<tr><th><button class="btn btn-primary" type="submit">Existing
+				Customers List</button></th></tr>
+				</table>
+		
+</div>
+	</form>
+	
 
 	
-	</div>
+	
 
 </body>
 </html>

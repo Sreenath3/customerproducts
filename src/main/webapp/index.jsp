@@ -64,6 +64,8 @@ font-family:verdana;
 
 			<tr><th><h3 style="font-size: 25px;">Customerpassword*</h3></th></tr>
 			<tr><th><input type="password" name="password" value="password"></th></tr>
+			<tr><th><h3 style="font-size: 25px;">OrderId*</h3></th></tr>
+			<tr><th><input type="text" name="orderid"  placeholder="Orderid"></th></tr>
 			
 
 			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
@@ -76,7 +78,8 @@ font-family:verdana;
 	</form>
 	<div align="right" class="container">
 	<a style="color: blue;font-size:20px;" href="/manager.jsp"><b>Merchant Login</b></a>
-	<a style="color: blue;font-size:20px;" href="/addcustomer.jsp"><b>signup</b></a>
+	<br>
+	<a style="color: blue;font-size:20px;" href="/addcustomer.jsp"><b>Customer signup</b></a>
 	
 	
 	</div>

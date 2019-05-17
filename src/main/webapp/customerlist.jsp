@@ -31,6 +31,7 @@
 				<th>Email</th>
 				
 				<th>Password</th>
+				<th>OrderId</th>
 				<th>Balance</th>
 			</tr>
 		</thead>
@@ -42,6 +43,7 @@
 					<td>${trainees.customeraddress}</td>
 					<td>${trainees.email}</td>
 					<td>${trainees.pass}</td>
+					<td>${trainees.orderid}</td>
 					<td>${trainees.balance}</td>
 					
 				</tr>
