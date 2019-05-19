@@ -16,8 +16,8 @@ body {
 
 input[type=text] {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+	padding: 10px 15px;
+	margin: 6px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
@@ -35,43 +35,42 @@ button {
 </style>
 </head>
 <body>
-	<form action="../customer/saveee" method="Post">
+	<form action="../home4.jsp" method="Post">
 		<table align="center">
 			<tr>
-				<th><h1 align="center">Adding a new Customer</h1></th>
+				<th><h1 align="center">Ordering a new Product</h1></th>
 			</tr>
+			
+			
 			<tr>
-				<th><h3>Customer Name</h3>
-					<input type="text" name="customername" required autofocus /></th>
+				<th><h3>Productname</h3>
+					<input type="text" name="productname" required autofocus /></th>
 			</tr>
+			
 			<tr>
-				<th><h3>Customer Address</h3>
-					<input type="text" name="customeraddress" required autofocus /></th>
+				<th><h3>ProductId</h3>
+					<input type="text" name="productid" required autofocus /></th>
 			</tr>
-			<tr>
-				<th><h3>Customer Email</h3>
-					<input type="text" name="email" required autofocus /></th>
-			</tr>
-			<tr>
-				<th><h3>
-						<b>Customer Password
-					</h3>
-					<input type="text" name="pass" required autofocus></th>
-			</tr>
-			<tr>
-				<th><h3>
-						<b>OrderId
-					</h3>
-					<input type="text" name="orderid"></th>
-			</tr>
+			
+			
+			
 			<br>
 			<tr>
-				<th><button class="btn btn-primary" type="submit">Add
-						Customer</button></th>
+				<th><button class="btn btn-primary" type="submit">
+						Proceed To Payment Gateway</button></th>
 			</tr>
+			</form>
+			<form action="../customer/productslist" method="Post">
+	<div class="container">
+		
+			<tr><th><button class="btn btn-primary" type="submit">Existing
+				Products List</button></th></tr>
+				</table>
+		
+</div>
+	</form>
 		
 
-	</form>
 	
 
 </body>

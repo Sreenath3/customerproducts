@@ -34,29 +34,7 @@
 	
 	<br>
 	<a href="../orderproduct.jsp">1.Proceed To Order</a>
-	<br>
-	<br>
-	<br>
-		<a href="../addmoney.jsp">2.Add Money</a>
-		<br>
-		<br>
-		<br>
-		<a href="../withdrawmoney.jsp">3.WithDraw money</a><br>
-		<br>
-		<br>
-		<a href="../customer/balance2">4.RetreivingBalance</a>
-		<br>
-		<br>
-		<br>
-			<a href="../tranfermoney.jsp">5.Money Transfer</a>
-			<br>
-			<br>
-			<br>
-			<a href="../changepassword.jsp">6.Change Password</a>
-			<br>
-			<br>
-			<br>
-			<a href="../customer/transaction">7.Print Transaction</a>
+	
 			
 			
 			

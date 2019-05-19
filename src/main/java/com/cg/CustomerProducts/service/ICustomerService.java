@@ -12,7 +12,8 @@ public interface ICustomerService {
 
 	public Customer findById(Integer id);
 
-	public Customer findByEmailAndPassAndOrderid(String email, String password,Integer orderid);
+	public Customer findByIdAndEmailAndPassAndOrderid(Integer id,String email, String password,Integer orderid);
+	public Customer findByIdAndEmailAndPass(Integer id,String email, String password);
 
 	public Customer findByEmail(String email);
 	public Customer findByOrderid(Integer orderid);

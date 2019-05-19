@@ -33,30 +33,27 @@
 	
 	
 	<br>
-	<a href="../orderproduct.jsp">1.Proceed To Order</a>
-	<br>
-	<br>
-	<br>
-		<a href="../addmoney.jsp">2.Add Money</a>
+	
+		<a href="../addmoney.jsp">1.Add Money</a>
 		<br>
 		<br>
 		<br>
-		<a href="../withdrawmoney.jsp">3.WithDraw money</a><br>
+		<a href="../withdrawmoney.jsp">2.WithDraw money</a><br>
 		<br>
 		<br>
-		<a href="../customer/balance2">4.RetreivingBalance</a>
+		<a href="../customer/balance">3.RetreivingBalance</a>
 		<br>
 		<br>
 		<br>
-			<a href="../tranfermoney.jsp">5.Money Transfer</a>
+			<a href="../transfermoney2.jsp">4.Money Transfer</a>
 			<br>
 			<br>
 			<br>
-			<a href="../changepassword.jsp">6.Change Password</a>
+			<a href="../changepassword.jsp">5.Change Password</a>
 			<br>
 			<br>
 			<br>
-			<a href="../customer/transaction">7.Print Transaction</a>
+			<a href="../customer/transaction">6.Print Transaction</a>
 			
 			
 			

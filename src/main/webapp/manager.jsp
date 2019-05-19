@@ -78,10 +78,19 @@ font-family:verdana;
 	
 	
 	<form action="../customer/saveee1" method="Post">
-	<<div class="container">
+	<div class="container">
 		
 			<tr><th><button class="btn btn-primary" type="submit">Existing
 				Customers List</button></th></tr>
+				
+		
+</div>
+	</form>
+	<form action="../addproduct.jsp" method="Post">
+	<div class="container">
+		
+			<tr><th><button class="btn btn-primary" type="submit">
+				Add a Product</button></th></tr>
 				</table>
 		
 </div>

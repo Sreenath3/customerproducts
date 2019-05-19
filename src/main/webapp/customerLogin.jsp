@@ -1,17 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="main.css">
-<script src="webjars/jquery/2.0.0/jquery.min.js"></script>
 <style>
 body {
 	font-family: verdana;
+	background-color:lightblue;
 }
 
 /* Full-width input fields */
@@ -44,23 +41,11 @@ font-family:verdana;
 
 
 </style>
-
 </head>
 <body>
-	<div class="container">
-		<h2
-			style="text-align: center; background-color: skyblue; padding: 20px; width: 100%;">
-			<b>Return Product</b>
-			
-		</h2>
-		<a style="color: blue;font-size:20px;float:right;" href="/customerLogin.jsp"><b>Customer Login</b></a>
-	
-	<form action="customer/checkuser" method="post">
-	<a style="color: blue;font-size:20px;float:left" href="/admin.jsp"><b>Admin Login</b></a>
-		
-		<h2 style="color:blue;">Login Page</h2>
+<h2 style="color:blue;">Login Page</h2>
 		<table align="center">
-		
+		<form action="customer/checkuser1" method="post">
 		<tr><th><h3 style="font-size: 20px;">CustomerId*</h3></th></tr>
 			<tr><th><input type="text" name=id  placeholder="Enter Customeremail"></th></tr>
 			<tr><th><h3 style="font-size: 20px;">CustomerEmail*</h3></th></tr>
@@ -68,28 +53,12 @@ font-family:verdana;
 
 			<tr><th><h3 style="font-size: 20px;">Customerpassword*</h3></th></tr>
 			<tr><th><input type="password" name="password" value="password"></th></tr>
-			<tr><th><h3 style="font-size: 20px;">OrderId*</h3></th></tr>
-			<tr><th><input type="text" name="orderid"  placeholder="Orderid"></th></tr>
+			
 			
 
 			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
 			</table>
-
-		</div>
-
-
-
-	</form>
-	<div align="right" class="container">
-	<a style="color: blue;font-size:20px;" href="/manager.jsp"><b>Merchant Login</b></a>
-	<br>
-	<a style="color: blue;font-size:20px;" href="/addcustomer.jsp"><b>Customer signup</b></a>
-	
-	
-	</div>
-
-	
-	</div>
+			</form>
 
 </body>
 </html>
