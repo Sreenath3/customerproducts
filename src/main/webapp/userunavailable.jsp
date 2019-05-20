@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h3 align="right"><a href="/">Login Page</a></h3>
 Email not present
 </body>
 </html>

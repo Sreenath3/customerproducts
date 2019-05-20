@@ -50,6 +50,7 @@ b {
 	<form action="customer/add" method="post">
 
 		<h1 align="center">Adding Operation</h1>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
 
 			<tr>

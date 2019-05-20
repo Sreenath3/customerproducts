@@ -36,6 +36,7 @@ button {
 </head>
 <body>
 	<form action="../customer/saveee4" method="Post">
+	<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
 			<tr>
 				<th><h1 align="center">Adding a new Product</h1></th>

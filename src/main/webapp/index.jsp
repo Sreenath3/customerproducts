@@ -53,6 +53,7 @@ font-family:verdana;
 			<b>Return Product</b>
 			
 		</h2>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<a style="color: blue;font-size:20px;float:right;" href="/customerLogin.jsp"><b>Customer Login</b></a>
 	
 	<form action="customer/checkuser" method="post">

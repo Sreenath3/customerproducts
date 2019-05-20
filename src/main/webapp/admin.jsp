@@ -37,6 +37,7 @@ button {
 	<form action="customer/manager1" method="Post">
 
 		<h1 align="center">Merchant Details</h1>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<table  align="center">
 			<tr><th><h3> UserName</h3></th></tr>
 			<tr><th><input type="text" name="name" required autofocus /></th></tr>

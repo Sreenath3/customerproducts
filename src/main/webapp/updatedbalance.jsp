@@ -18,6 +18,7 @@
 </head>
 <body>
 <h1 align="center">Updated Balance</h1>
+<h3 align="right"><a href="/">Login Page</a></h3>
 	<table border="1" align="center">
 		<thead>
 			<tr>

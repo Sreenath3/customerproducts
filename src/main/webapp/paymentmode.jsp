@@ -23,6 +23,11 @@
        {
         font-family:verdana;
        }
+       img{
+      width: 150px;
+      height: 110px;
+
+    }
         </style>
 </head>
 <body>
@@ -34,8 +39,18 @@
 	
 	
 	<br>
-	<a href="../orderproduct.jsp">1.Proceed To Order</a>
 	
+		 <img src="paytm.jpeg" alt="paytm" height="150" width="150"><a href="../transfermoney2.jsp">Paytm</a>
+		<br>
+		<br>
+		<br>
+		<img src="debitcard.jpg" alt="debitcard" height="150" width="150"><a href="../debitdetails.jsp">Debitcard/Creditcard</a><br>
+		<br>
+		<br>
+		<img src="cashondelivery.jpg" alt="debitcard" height="150" width="150"><a href="../transfermoney2.jsp">Cash on Delivery</a>
+		<br>
+		<br>
+		<br>
 			
 			
 			

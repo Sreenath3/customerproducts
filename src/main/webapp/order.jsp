@@ -9,6 +9,7 @@
 <body>
 
 <form action="../customer/order" method="post">
+<h3 align="right"><a href="/">Login Page</a></h3>
 	
 	<label>Product Name</label>
 		<input type="name" name="name" required autofocus /> </th></th>

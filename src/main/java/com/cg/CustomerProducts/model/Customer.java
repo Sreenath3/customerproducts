@@ -1,9 +1,14 @@
 package com.cg.CustomerProducts.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -20,7 +25,15 @@ public class Customer {
 	private String email;
 	private String pass;
 	private int orderid;
+	@OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+	private Set<CustomerTransaction> transaction = new HashSet<>();
 	
+	public Set<CustomerTransaction> getTransaction() {
+		return transaction;
+	}
+	public void setTransaction(Set<CustomerTransaction> transaction) {
+		this.transaction = transaction;
+	}
 	public int getOrderid() {
 		return orderid;
 	}
@@ -71,6 +84,10 @@ public class Customer {
 	}
 	public void setPass(String pass) {
 		this.pass = pass;
+	}
+	public void addTransaction(CustomerTransaction transaction) {
+		transaction.setCustomer(this); // this will avoid nested cascade
+		this.getTransaction().add(transaction);
 	}
 	
 	

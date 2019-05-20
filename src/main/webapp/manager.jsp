@@ -54,6 +54,7 @@ font-family:verdana;
 			<b>Return Product</b>
 			
 		</h2>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 	
 	<form action="customer/manager" method="post">
 		
@@ -61,7 +62,7 @@ font-family:verdana;
 		<table align="center">
 		<a style="color: blue;font-size:20px;" href="/admin.jsp"><b>Admin Login</b></a>
 			<tr><th><h3 style="font-size: 25px;">Id*</h3></th></tr>
-			<tr><th><input type="text" name=id  placeholder="id"></th></tr>
+			<tr><th><input type="text" name=id  placeholder="id" required autofocus></th></tr>
 
 			
 			
@@ -81,7 +82,7 @@ font-family:verdana;
 	<div class="container">
 		
 			<tr><th><button class="btn btn-primary" type="submit">Existing
-				Customers List</button></th></tr>
+				Customers </button></th></tr>
 				
 		
 </div>
@@ -91,10 +92,21 @@ font-family:verdana;
 		
 			<tr><th><button class="btn btn-primary" type="submit">
 				Add a Product</button></th></tr>
+				
+		
+</div>
+	</form>
+	
+	<form action="../customer/saveee5" method="Post">
+	<div class="container">
+		
+			<tr><th><button class="btn btn-primary" type="submit">
+				Existing Coupons</button></th></tr>
 				</table>
 		
 </div>
 	</form>
+	
 	
 
 	

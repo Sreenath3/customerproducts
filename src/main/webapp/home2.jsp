@@ -27,6 +27,7 @@
 </head>
 <body>
 	<h2 style="background-color:lightblue;padding:25px;width: 100%"><marquee>Banking System</marquee></h2>
+	<h3 align="right"><a href="/">Login Page</a></h3>
 	 
 
 	<b style="font-size:25px">Pick Your Option</b>

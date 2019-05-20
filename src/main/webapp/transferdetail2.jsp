@@ -17,7 +17,8 @@
         </style>
 </head>
 <body>
-<h1 align="center">   ${{AA.name}}  Your Account Balance Is ${{AA.balance}}  </h1>  
+<h3 align="right"><a href="/">Login Page</a></h3>
+<h1 align="center">   ${{AA.customername}}  Your Updated Paytm Balance Is ${{AA.balance}}  </h1>  
 
 </body>
 </html>

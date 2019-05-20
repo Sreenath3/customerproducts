@@ -37,6 +37,7 @@ button {
 <body>
 	<form action="../customer/saveee2" method="Post">
 		<table align="center">
+		<h3 align="right"><a href="/">Login Page</a></h3>
 			<tr>
 				<th><h1 align="center">Adding a new Merchant</h1></th>
 			</tr>
@@ -77,6 +78,13 @@ button {
 		
 			<tr><th><button class="btn btn-primary" type="submit">Existing
 				Merchants List</button></th></tr>
+	
+
+	</form>
+	<form action="../addcoupon.jsp" method="Post">
+		
+			<tr><th><button class="btn btn-primary" type="submit">Add Coupon
+				</button></th></tr>
 		</table>
 
 	</form>

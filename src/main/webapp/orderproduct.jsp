@@ -37,6 +37,7 @@ button {
 <body>
 	<form action="../home4.jsp" method="Post">
 		<table align="center">
+		<h3 align="right"><a href="/">Login Page</a></h3>
 			<tr>
 				<th><h1 align="center">Ordering a new Product</h1></th>
 			</tr>

@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.cg.CustomerProducts.model.Coupon;
 import com.cg.CustomerProducts.model.Customer;
 import com.cg.CustomerProducts.model.Merchant;
 import com.cg.CustomerProducts.model.MerchantTransaction;
 import com.cg.CustomerProducts.model.Product;
 import com.cg.CustomerProducts.model.Shipping;
+import com.cg.CustomerProducts.service.CouponServiceImpl;
 import com.cg.CustomerProducts.service.CustomerServiceImpl;
 import com.cg.CustomerProducts.service.IShippingServiceImpl;
 import com.cg.CustomerProducts.service.MerchantServiceImpl;
@@ -34,6 +36,8 @@ public class Controller {
 	private MerchantServiceImpl service2;
 	@Autowired
 	private ProductServiceImpl service4;
+	@Autowired
+	private CouponServiceImpl service5;
 
 	@PostMapping("/saveee")
 	public ModelAndView save(@RequestParam String customername, @RequestParam String customeraddress,
@@ -89,6 +93,14 @@ public class Controller {
 		modelAndView.addObject("CUSTOMERLIST", customerlist1);
 		return modelAndView;
 	}
+	@PostMapping("/saveee5")
+	public ModelAndView save4() {
+
+		List<Coupon> customerlist1 = service5.findAll();
+		ModelAndView modelAndView = new ModelAndView("couponList");
+		modelAndView.addObject("COUPONLIST", customerlist1);
+		return modelAndView;
+	}
 	@PostMapping("/productslist")
 	public ModelAndView save3() {
 
@@ -116,6 +128,21 @@ public class Controller {
 		modelAndView.addObject("PRODUCTLIST", customerlist1);
 		return modelAndView;
 	}
+	@PostMapping("/coupondetails")
+	public ModelAndView save1( @RequestParam String couponName,
+			 @RequestParam String couponDiscountValue) {
+		Coupon customerlist = new Coupon();
+		
+		customerlist.setCouponName(couponName);;
+		customerlist.setCouponDiscountValue(couponDiscountValue);;
+
+
+		service5.save(customerlist);
+		List<Coupon> customerlist1 = service5.findAll();
+		ModelAndView modelAndView = new ModelAndView("couponList");
+		modelAndView.addObject("COUPONLIST", customerlist1);
+		return modelAndView;
+	}
 
 	@PostMapping("/manager")
 	public ModelAndView ManagerLogin(@RequestParam Integer id) {
@@ -128,7 +155,7 @@ public class Controller {
 			modelAndView = new ModelAndView("noidfound");
 			return modelAndView;
 		} else {
-			modelAndView = new ModelAndView("home2");
+			modelAndView = new ModelAndView("home6");
 			return modelAndView;
 		}
 	}
@@ -278,7 +305,7 @@ public class Controller {
 			service.save(sender);
 			service2.save(receiver);
 
-			ModelAndView modelAndView = new ModelAndView("transferdetail");
+			ModelAndView modelAndView = new ModelAndView("transferdetail2");
 
 			modelAndView.addObject("BB", receiver);
 			modelAndView.addObject("AA", sender);

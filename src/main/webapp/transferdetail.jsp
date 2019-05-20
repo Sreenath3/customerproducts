@@ -17,6 +17,7 @@
         </style>
 </head>
 <body>
+<h3 align="right"><a href="/">Login Page</a></h3>
 <h1 align="center">   ${{BB.name}}  Your Account Balance Is ${{BB.balance}}  </h1>  
 
 </body>

@@ -28,7 +28,7 @@ button {
   margin: 15px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
 }
 h2
 {
@@ -45,20 +45,30 @@ font-family:verdana;
 <body>
 <h2 style="color:blue;">Login Page</h2>
 		<table align="center">
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<form action="customer/checkuser1" method="post">
 		<tr><th><h3 style="font-size: 20px;">CustomerId*</h3></th></tr>
-			<tr><th><input type="text" name=id  placeholder="Enter Customeremail"></th></tr>
+			<tr><th><input type="text" name=id  placeholder="Enter Customeremail" required autofocus></th></tr>
 			<tr><th><h3 style="font-size: 20px;">CustomerEmail*</h3></th></tr>
-			<tr><th><input type="text" name=email  placeholder="Enter Customeremail"></th></tr>
+			<tr><th><input type="text" name=email  placeholder="Enter Customeremail" required autofocus></th></tr>
 
 			<tr><th><h3 style="font-size: 20px;">Customerpassword*</h3></th></tr>
-			<tr><th><input type="password" name="password" value="password"></th></tr>
+			<tr><th><input type="password" name="password" value="password" required autofocus></th></tr>
 			
 			
 
 			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
-			</table>
+			
 			</form>
+			<form action="../customer/saveee5" method="Post">
+	<div class="container">
+		
+			<tr><th><button class="btn btn-primary" type="submit">
+				Existing Coupons</button></th></tr>
+				</table>
+		
+</div>
+	</form>
 
 </body>
 </html>

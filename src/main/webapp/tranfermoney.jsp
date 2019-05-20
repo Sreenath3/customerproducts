@@ -36,6 +36,7 @@ button {
 <body>
 	<form action="customer/transfer" method="post">
 		<h1 align="center">Transfer Operation</h1>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
 			<tr><th><h3>Enter Account id of the Customer</h3></th></tr>
 			<tr><th><input type="number" name="id"></th></tr>

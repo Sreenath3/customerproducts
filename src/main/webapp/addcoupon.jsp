@@ -35,40 +35,26 @@ button {
 </style>
 </head>
 <body>
-	<form action="../customer/saveee" method="Post">
+	<form action="../customer/coupondetails" method="Post">
 	<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
 			<tr>
-				<th><h1 align="center">Adding a new Customer</h1></th>
+				<th><h1 align="center">Adding a Coupon</h1></th>
+			</tr>
+			
+			<tr>
+				<th><h3>CouponName</h3>
+					<input type="text" name="couponName" required autofocus /></th>
 			</tr>
 			<tr>
-				<th><h3>Customer Name</h3>
-					<input type="text" name="customername" required autofocus /></th>
+				<th><h3>DiscountValue</h3>
+					<input type="text" name="couponDiscountValue" required autofocus /></th>
 			</tr>
-			<tr>
-				<th><h3>Customer Address</h3>
-					<input type="text" name="customeraddress" required autofocus /></th>
-			</tr>
-			<tr>
-				<th><h3>Customer Email</h3>
-					<input type="text" name="email" required autofocus /></th>
-			</tr>
-			<tr>
-				<th><h3>
-						<b>Customer Password
-					</h3>
-					<input type="text" name="pass" required autofocus></th>
-			</tr>
-			<tr>
-				<th><h3>
-						<b>OrderId
-					</h3>
-					<input type="text" name="orderid"></th>
-			</tr>
+			
 			<br>
 			<tr>
 				<th><button class="btn btn-primary" type="submit">Add
-						Customer</button></th>
+						Coupon</button></th>
 			</tr>
 		
 

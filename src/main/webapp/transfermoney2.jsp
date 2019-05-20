@@ -36,8 +36,9 @@ button {
 <body>
 	<form action="customer/transfer2" method="post">
 		<h1 align="center">Transfer Operation</h1>
+		<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
-			<tr><th><h3>Enter Account id of the Merchant</h3></th></tr>
+			<tr><th><h3>Enter number of the Merchant</h3></th></tr>
 			<tr><th><input type="number" name="id"></th></tr>
 			<tr><th><h3>Enter Money to transfer</h3></th></tr>
 			<tr><th><input type="number" name="money"></th></tr>
