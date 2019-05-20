@@ -53,7 +53,7 @@ font-family:verdana;
 			<b>Return Product</b>
 			
 		</h2>
-		<h3 align="right"><a href="/">Login Page</a></h3>
+		
 		<a style="color: blue;font-size:20px;float:right;" href="/customerLogin.jsp"><b>Customer Login</b></a>
 	
 	<form action="customer/checkuser" method="post">
@@ -63,7 +63,7 @@ font-family:verdana;
 		<table align="center">
 		
 		<tr><th><h3 style="font-size: 20px;">CustomerId*</h3></th></tr>
-			<tr><th><input type="text" name=id  placeholder="Enter Customeremail"></th></tr>
+			<tr><th><input type="text" name=id  placeholder="Enter CustomerId"></th></tr>
 			<tr><th><h3 style="font-size: 20px;">CustomerEmail*</h3></th></tr>
 			<tr><th><input type="text" name=email  placeholder="Enter Customeremail"></th></tr>
 
