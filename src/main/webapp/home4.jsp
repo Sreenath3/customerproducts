@@ -100,7 +100,7 @@
 	
 	<br>
 	
-		<a href="../addmoney.jsp">1.Add Money</a>
+		<a href="../addmoney2.jsp">1.Add Money</a>
 		<br>
 		<br>
 		<br>

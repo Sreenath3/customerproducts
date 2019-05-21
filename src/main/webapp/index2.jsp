@@ -35,41 +35,35 @@ button {
 </style>
 </head>
 <body>
-	<form action="../home4.jsp" method="Post">
+	<form action="../customer/delivery" method="Post">
+	<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
-		<h3 align="right"><a href="/">Login Page</a></h3>
 			<tr>
-				<th><h1 align="center">Ordering a new Product</h1></th>
+				<th><h1 align="center">Delivery Details</h1></th>
 			</tr>
-			
-			
 			<tr>
-				<th><h3>Productname</h3>
-					<input type="text" name="productname" required autofocus /></th>
+				<th><h3>Delivery Date</h3>
+					<input type="text" name="date" required autofocus /></th>
 			</tr>
-			
 			<tr>
-				<th><h3>Category</h3>
-					<input type="text" name="productcategory" required autofocus /></th>
+				<th><h3>Delivery Status</h3>
+					<input type="text" name="status" required autofocus /></th>
 			</tr>
-			
-			
+			<tr>
+				<th><h3>Quantity</h3>
+					<input type="text" name="quantity" required autofocus /></th>
+			</tr>
+			<tr>
+				<th><h3>Productid</h3>
+					<input type="text" name="productid" required autofocus /></th>
+			</tr>
+		
 			
 			<br>
 			<tr>
 				<th><button class="btn btn-primary" type="submit">
-						Proceed To Payment Gateway</button></th>
+						Delivery</button></th>
 			</tr>
-			</form>
-			<form action="../customer/productslist" method="Post">
-	<div class="container">
-		
-			<tr><th><button class="btn btn-primary" type="submit">Existing
-				Products List</button></th></tr>
-				</table>
-		
-</div>
-	</form>
 		
 
 	

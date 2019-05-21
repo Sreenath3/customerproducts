@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,17 +15,35 @@
         background-color:skyblue;
          font-family:verdana;
         }
-        a
-        {
-        font-size:20px;
-        }
+       
+        
         </style>
 </head>
 <body>
+<h1 align="center">Query Details</h1>
 <h3 align="right"><a href="/">Login Page</a></h3>
- <h1 align="center">   ${{AA.customername}}  Your Order is Placed Successfully </h1>
- <a href="../deliverystatus.jsp">CheckDeliveryStatus</a> 
-<!-- <h1 align="center">   Order Placed  </h1>  -->
+	<table border="1" align="center">
+		<thead>
+			<tr>
+				<th>ProductId</th>
+				<th>ProductName</th>
+				<th>Cause</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="trainees" items="${QUERYLIST}">
+				<tr>
+					<td>${trainees.productid}</td>
+					<td>${trainees.productname}</td>
+					<td>${trainees.cause}</td>
+				
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+	
+	
 
 </body>
 </html>

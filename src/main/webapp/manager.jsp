@@ -69,7 +69,7 @@ font-family:verdana;
 
 			<tr><th><button class="btn btn-primary" type="submit">Login</button></th></tr>
 			
-
+</table>
 		</div>
 
 
@@ -78,34 +78,6 @@ font-family:verdana;
 	
 	
 	
-	<form action="../customer/saveee1" method="Post">
-	<div class="container">
-		
-			<tr><th><button class="btn btn-primary" type="submit">Existing
-				Customers </button></th></tr>
-				
-		
-</div>
-	</form>
-	<form action="../addproduct.jsp" method="Post">
-	<div class="container">
-		
-			<tr><th><button class="btn btn-primary" type="submit">
-				Add a Product</button></th></tr>
-				
-		
-</div>
-	</form>
-	
-	<form action="../customer/saveee5" method="Post">
-	<div class="container">
-		
-			<tr><th><button class="btn btn-primary" type="submit">
-				Existing Coupons</button></th></tr>
-				</table>
-		
-</div>
-	</form>
 	
 	
 

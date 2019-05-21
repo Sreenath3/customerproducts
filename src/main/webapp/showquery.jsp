@@ -41,23 +41,29 @@ a
 {
 font-family:verdana;
 }
+h3
+{
+font-family:verdana;
+}
 
 
 </style>
 </head>
 <body>
 <h2 style="background-color:lightblue;padding:25px;width: 100%"><marquee>Returning Product to merchant</marquee></h2>
+<form action="../customer/saveee65" method="Post">
     <table align="center">
-			<tr><th><h3 style="font-size: 20px;">Orderid</h3></th></tr>
-			<tr><th><input type="text" name=query  placeholder="Enter id"></th></tr>
+			
+		
 			<tr><th><h3 style="font-size: 20px;">Productid</h3></th></tr>
-			<tr><th><input type="text" name=query  placeholder="Enter id"></th></tr>
+			<tr><th><input type="text" name="productid"  placeholder="productid"></th></tr>
 			<tr><th><h3 style="font-size: 20px;">ProductName</h3></th></tr>
-			<tr><th><input type="text" name=query  placeholder="Enter product name"></th></tr>
+			<tr><th><input type="text" name="productname"  placeholder="productname"></th></tr>
 			<tr><th><h3 style="font-size: 20px;">Cause for return</h3></th></tr>
-			<tr><th><input type="text" name=query  placeholder="max 50 characters"></th></tr>
+			<tr><th><input type="text" name="cause"  placeholder="cause"></th></tr>
 			<tr><th><button class="btn btn-primary" type="submit">send</button></th></tr>
 			</table>
+			</form>
 			
 </body>
 </html>

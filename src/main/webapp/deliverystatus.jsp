@@ -35,41 +35,21 @@ button {
 </style>
 </head>
 <body>
-	<form action="../home4.jsp" method="Post">
+	<form action="../customer/saveee56" method="Post">
+	<h3 align="right"><a href="/">Login Page</a></h3>
 		<table align="center">
-		<h3 align="right"><a href="/">Login Page</a></h3>
 			<tr>
-				<th><h1 align="center">Ordering a new Product</h1></th>
+				<th><h1 align="center">Delivery Status</h1></th>
+			</tr>
+			<tr>
+				<th><h3>DeliveryId*</h3>
+					<input type="text" name="id" required autofocus /></th>
 			</tr>
 			
-			
-			<tr>
-				<th><h3>Productname</h3>
-					<input type="text" name="productname" required autofocus /></th>
-			</tr>
-			
-			<tr>
-				<th><h3>Category</h3>
-					<input type="text" name="productcategory" required autofocus /></th>
-			</tr>
-			
-			
-			
-			<br>
 			<tr>
 				<th><button class="btn btn-primary" type="submit">
-						Proceed To Payment Gateway</button></th>
+						Check</button></th>
 			</tr>
-			</form>
-			<form action="../customer/productslist" method="Post">
-	<div class="container">
-		
-			<tr><th><button class="btn btn-primary" type="submit">Existing
-				Products List</button></th></tr>
-				</table>
-		
-</div>
-	</form>
 		
 
 	

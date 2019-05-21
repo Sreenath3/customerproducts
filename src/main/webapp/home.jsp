@@ -44,7 +44,7 @@
 			<br>
 			<br>
 			<br>
-			<a href="../customer/addquery">3.Add query</a>
+			<a href="../showquery.jsp">3.Add query</a>
 			
 			
 			

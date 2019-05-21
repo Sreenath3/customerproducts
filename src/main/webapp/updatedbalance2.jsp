@@ -14,17 +14,27 @@
         background-color:skyblue;
          font-family:verdana;
         }
-        a
-        {
-        font-size:20px;
-        }
         </style>
 </head>
 <body>
+<h1 align="center">Updated Balance</h1>
 <h3 align="right"><a href="/">Login Page</a></h3>
- <h1 align="center">   ${{AA.customername}}  Your Order is Placed Successfully </h1>
- <a href="../deliverystatus.jsp">CheckDeliveryStatus</a> 
-<!-- <h1 align="center">   Order Placed  </h1>  -->
-
+	<table border="1" align="center">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>BALANCE</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>${BB.id}</td>
+				<td>${BB.customername}</td>
+				<td>${BB.balance}</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
